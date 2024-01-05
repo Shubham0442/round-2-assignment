@@ -2,8 +2,8 @@ import React from "react";
 
 const List = ({ users }) => {
   return (
-    <div>
-      <table>
+    <div style={{ width: "100%", margin: "auto" }}>
+      <table style={{ width: "70%", margin: "auto" }}>
         <thead>
           <tr>
             <th>Sr. No.</th>

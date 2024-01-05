@@ -46,23 +46,29 @@ const AddUser = () => {
       <h4>Add New User</h4>
       <br />
       <form onSubmit={handleSave}>
+        <label>Firstname: </label>
         <input
           type="text"
           name="firstname"
+          placeholder="Please add first name"
           value={newUser.firstname}
           onChange={handleChange}
         />
         <br />
+        <label>Listname: </label>
         <input
           type="text"
           name="lastname"
+          placeholder="Please add last name"
           value={newUser.lastname}
           onChange={handleChange}
         />
         <br />
+        <label>Mobile: </label>
         <input
           type="number"
           name="mobile"
+          placeholder="Please add mobile number"
           value={newUser.mobile}
           onChange={handleChange}
         />

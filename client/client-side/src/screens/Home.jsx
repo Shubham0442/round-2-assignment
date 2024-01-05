@@ -35,7 +35,7 @@ const Home = () => {
   }, [users.length]);
 
   return (
-    <div>
+    <div style={{ width: "100%", margin: "auto" }}>
       <button onClick={() => navigate("/adduser")}>Add User</button>
       <button onClick={() => navigate("/addgroup")}>Add Group</button>
       <h4>Users List</h4>

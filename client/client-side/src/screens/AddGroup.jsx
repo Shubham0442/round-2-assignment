@@ -83,11 +83,13 @@ const AddGroup = () => {
   return (
     <div>
       <h4>Add Group</h4>
+      <label>Group Name: </label>
       <input
         type="text"
         name="groupname"
         value={groupname}
         onChange={(e) => setGroupname(e.target.value)}
+        placeholder="Please add group name"
       />
       <div
         style={{ border: "1px solid", width: "100px", margin: "auto" }}
@@ -103,7 +105,7 @@ const AddGroup = () => {
             userList.map((el) => (
               <div key={el._id}>
                 <input type="checkbox" value={el._id} onChange={handleChange} />
-                {el.firstname}
+                {el.firstname} {el.lastname}
               </div>
             ))}
         </div>
